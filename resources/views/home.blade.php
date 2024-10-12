@@ -10,23 +10,22 @@
 
     <body>
 
+        <style>
+            #container{
+                height: 100px;
+                width: 100px;
+                background-color: red; 
+            }
+            #table{
+             width: 50%;
+             height: 50%;
+             background-color: blue;
+            }
+        </style>
         <div id="container">
-            <div id="table"></div>
+            <div id="table">hii</div>
         </div>
 
     </body>
 
 </html>
-
-<style>
-    #conatiner{
-        height: 100px;
-        width: 100px;
-        background-color: red; 
-    }
-    #table{
-     width: 50%;
-     height: 50%;
-     background-color: blue;
-    }
-</style>
