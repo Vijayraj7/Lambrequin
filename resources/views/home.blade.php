@@ -8,9 +8,10 @@
     <body>
         <!-- Navigation Bar -->
         <header>
+
             <nav>
                 <div class="logo">
-                    <h1>LAMBREQUIN PRIVATE LIMITED</h1>
+                    <h1 id="lambtitle">LAMBREQUIN PRIVATE LIMITED</h1>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -19,7 +20,13 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <!--  -->
+            <img class="header_img" src="./images/picture16.jpg">
         </header>
+        <section>
+            <img src="/images/pic14.webp"
+                alt class="image2">
+        </section>
 
         <!-- Hero Section -->
         <section id="home" class="hero">
@@ -72,7 +79,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>© 2024 SoftTech Solutions. All Rights Reserved.</p>
+            <p>© 2024 Lambrequin Private Limited. All Rights Reserved.</p>
         </footer>
     </body>
 </html>
@@ -88,12 +95,24 @@ body {
 
 /* Navigation Bar */
 header {
+    position: relative;
+    /*  */
+    background-size: cover;
     background-color: #275245;
     color: #fff;
     padding: 10px 0;
+    width: 100%;
 }
 
+header .header_img{
+width: 100%;
+}
+  .image2{
+width: 100%;
+}
 nav {
+    position: absolute;
+    /*  */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,13 +145,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f0a500;
+ color: #f0a500;
 }
-
+#lambtitle
+{
+   font-size: 28px; 
+}
+@media(max-width:800px){
+    #lambtitle{
+        font-size: 12px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+}
 /* Hero Section */
 .hero {
-    background: #c2c3f5;
+    background: #000000;
     text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: bold;
     padding: 100px 20px;
 }
 
@@ -163,7 +196,7 @@ nav ul li a:hover {
 
 /* Services Section */
 .services {
-    background-color: #fff;
+    background-color: #000000;
     padding: 50px 20px;
     text-align: center;
 }
@@ -185,10 +218,26 @@ nav ul li a:hover {
      .level2{
         padding: 5px;
     background-color: #ff0000;
+    display: block;
+    font: size 25px;;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
      .level3{
         padding: 5px;
     background-color: #8f2c2c;
+    display: block;
+    font-size: 25px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
  }
       .level4{
         padding: 5px;
